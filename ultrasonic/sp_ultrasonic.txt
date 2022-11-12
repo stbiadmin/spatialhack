@@ -1,0 +1,9 @@
+# Welcome to Sonic Pi
+set_volume!  0.2
+live_loop :listen do
+  use_real_time
+  note = sync "/osc*/play_this "#This accepts a message regardless of the sender
+  play note[0]
+  
+  
+end
